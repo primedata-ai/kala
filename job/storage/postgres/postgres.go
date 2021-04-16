@@ -43,8 +43,15 @@ func (d DB) GetAll() ([]*job.Job, error) {
 	}
 	err = nil
 	jobs := []*job.Job{}
+	result := make([]*job.Job, 0, len(jobs))
 	if r.Valid {
 		err = json.Unmarshal([]byte(r.String), &jobs)
+	}
+	for _, j := range jobs {
+		if err = j.InitDelayDuration(false); err != nil {
+			break
+		}
+		result = append(result, j)
 	}
 	return jobs, err
 }
