@@ -1,4 +1,4 @@
-module github.com/ajvb/kala
+module github.com/primedata-ai/kala
 
 go 1.13
 

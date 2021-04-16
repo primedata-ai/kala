@@ -11,7 +11,7 @@ jobs:
           MYSQL_ALLOW_EMPTY_PASSWORD: 1
           MYSQL_DATABASE: test
 
-    working_directory: /go/src/github.com/ajvb/kala
+    working_directory: /go/src/github.com/primedata-ai/kala
     environment:
       TEST_RESULTS: /tmp/test-results
       GO111MODULE: "on"

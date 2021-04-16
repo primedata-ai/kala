@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ajvb/kala/job"
+	"github.com/primedata-ai/kala/job"
 	"github.com/spf13/cobra"
 )
 

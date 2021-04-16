@@ -1,6 +1,6 @@
 FROM golang
 
-WORKDIR /go/src/github.com/ajvb/kala
+WORKDIR /go/src/github.com/primedata-ai/kala
 COPY . .
 RUN go build && mv kala /usr/bin
 

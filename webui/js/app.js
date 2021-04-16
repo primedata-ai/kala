@@ -80,7 +80,7 @@ var navbar = new Reef('#nav', {
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                <a class="button is-white is-outlined" href="https://github.com/ajvb/kala">
+                <a class="button is-white is-outlined" href="https://github.com/primedata-ai/kala">
                   <span class="icon">
                     <i class="fab fa-github"></i>
                   </span>

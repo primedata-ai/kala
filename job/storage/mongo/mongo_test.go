@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ajvb/kala/job"
+	"github.com/primedata-ai/kala/job"
 	mgo "gopkg.in/mgo.v2"
 
 	"github.com/stretchr/testify/assert"

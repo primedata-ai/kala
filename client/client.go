@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ajvb/kala/api"
-	"github.com/ajvb/kala/job"
+	"github.com/primedata-ai/kala/api"
+	"github.com/primedata-ai/kala/job"
 )
 
 const (
