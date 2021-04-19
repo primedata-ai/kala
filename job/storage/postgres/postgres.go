@@ -42,18 +42,18 @@ func (d DB) GetAll() ([]*job.Job, error) {
 		return nil, err
 	}
 	err = nil
-	jobs := []*job.Job{}
-	result := make([]*job.Job, 0, len(jobs))
+	var jobs []*job.Job
 	if r.Valid {
 		err = json.Unmarshal([]byte(r.String), &jobs)
 	}
+	result := make([]*job.Job, 0, len(jobs))
 	for _, j := range jobs {
 		if err = j.InitDelayDuration(false); err != nil {
 			break
 		}
 		result = append(result, j)
 	}
-	return jobs, err
+	return result, err
 }
 
 // Get returns a persisted Job.
